@@ -1,0 +1,402 @@
+@charset "UTF-8";
+
+@import url('https://fonts.cdnfonts.com/css/big-john-pro');
+
+body {
+    background: linear-gradient(to bottom, #fffcf2, #fde9c1);
+    font-family: 'Merriweather', serif; 
+    color: #4e342e;
+    margin: 0;
+    padding: 0;
+}
+
+#inicio {
+    background-color: #f6a93d;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+#intro {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+@media (max-width: 940px){
+#intro {
+    flex-direction: column; /* Coloca os itens um embaixo do outro */
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+}
+
+.IntroPeru, .IntroChile {
+    font-size: 100%;
+    border: 1px solid #ffab40;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 45%;
+}
+
+figure {
+    margin: 10px;
+}
+
+.tamanho, #sobre, #tamanho-ceviche, #tamanho-ají, #tamanho-suspiro, #tamanho-humitas, #tamanho-pisco {
+    max-width: 100%; /* Faz com que as imagens ocupem no máximo 100% do contêiner */
+    height: 200px; /* Mantém a proporção original */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Centraliza as imagens horizontalmente */
+    display: block; /* Garante que a centralização funcione */
+}
+
+#corpo-empanada-container, #ceviche-container, #ají-container, #suspiro-container, #humitas-container, #pisco-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+#intro-empanadas, #intro-ceviche, #intro-ají, #intro-suspiro, #intro-humitas, #intro-pisco {
+    font-size: 155%;
+    margin-top: -26px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+#receita-empanada, #receita-ceviche, #receita-ají, #receita-suspiro, #receita-humitas, #receita-pisco {
+    overflow-y: auto;
+    max-height: 700px;
+    border: 1px solid black;
+    margin: 20px;
+    background-color: rgba(210, 105, 30, 0.375);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    max-width: 500px;
+}
+
+#empanada-textos, #ceviche-textos, #ají-textos, #suspiro-textos, #humitas-textos, #pisco-textos {
+    display: flex;
+    justify-content: space-around;
+}
+
+#curiosidades-empanada, #curiosidades-ceviche, #curiosidades-ají, #curiosidades-suspiro, #curiosidades-humitas, #curiosidades-pisco {
+    font-size: 123%;
+    max-width: 500px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.IntroPeru, .IntroChile, #intro-empanadas, #intro-ceviche, #intro-ají, #intro-suspiro, #intro-humitas, #intro-pisco,
+#receita-empanada, #receita-ceviche, #receita-ají, #receita-suspiro, #receita-humitas, #receita-pisco,
+#curiosidades-empanada, #curiosidades-ceviche, #curiosidades-ají, #curiosidades-suspiro, #curiosidades-humitas, #curiosidades-pisco {
+    border: 1px solid #ffab40;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+nav {
+    width: 100%;
+    border: 1px solid black;
+    background-color: #f6a93d;
+    margin: 0;
+    display: flex; /* Flexbox para alinhar os elementos na mesma linha */
+    justify-content: space-between; /* Opcional: para espaçar o título e os links */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    padding: 10px; /* Adiciona espaço interno */
+}
+
+nav h1 {
+    margin: 0; /* Remove margens extras */
+    font-size: 1.5em; /* Ajusta o tamanho do título, se necessário */
+}
+
+nav p {
+    margin: 0;
+}
+
+nav p a {
+    margin: 0 10px; /* Espaçamento entre os links */
+    color: white; /* Ajusta a cor dos links */
+    text-decoration: none;
+}
+
+nav a:hover {
+    font-size: 19px;
+    background-color: white;
+    color:black;
+    padding: 5px;
+    border-radius: 15px;
+    font-style: oblique;
+    transition-duration: .25s;
+}
+
+footer {
+    background-color: #f8be69;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer ul {
+    display: inline-flex;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+
+.links ul li {
+    background-color: #f8be69;
+    color: white;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Big John PRO', sans-serif;
+}
+
+#receita-empanada h4, #receita-ceviche h4, #receita-ají h4, #receita-suspiro h4, #receita-humitas h4, #receita-pisco h4 {
+    font-family: 'Big John PRO', sans-serif;
+    color: #bf360c;
+}
+
+#curiosidades-empanada h3, #curiosidades-ceviche h3, #curiosidades-ají h3, #curiosidades-suspiro h3, #curiosidades-humitas h3, #curiosidades-pisco h3 {
+    font-family: 'Big John PRO', sans-serif;
+    color: #bf360c;
+}
+
+/**/
+
+@media (max-width: 800px) {
+#ají-container {
+    display: flex;
+    flex-direction: column; /* Coloca os itens um embaixo do outro */
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#ají-textos {
+    display: flex;
+    flex-direction: column; /* Coloca os itens um embaixo do outro */
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#intro-ají {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+#tamanho-ají{
+    padding: 30px;
+}
+}
+
+/**/
+
+@media (max-width: 800px) {
+#ceviche-container {
+    display: flex;
+    flex-direction: column; /* Coloca os itens um embaixo do outro */
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#ceviche-textos {
+    display: flex;
+    flex-direction: column; /* Coloca os itens um embaixo do outro */
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#intro-ceviche {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+#tamanho-ceviche{
+    padding: 30px;
+}
+}
+
+/**/
+
+@media (max-width: 800px) {
+#corpo-empanada-container {
+    display: flex;
+    flex-direction: column; /* Coloca os itens um embaixo do outro */
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#empanada-textos {
+    display: flex;
+    flex-direction: column; /* Coloca os itens um embaixo do outro */
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#intro-empanadas {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+#sobre{
+    padding: 30px;
+}
+}
+
+/**/
+
+@media (max-width: 800px) {
+#humitas-container {
+    display: flex;
+    flex-direction: column; /* Coloca os itens um embaixo do outro */
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#humitas-textos {
+    display: flex;
+    flex-direction: column; /* Coloca os itens um embaixo do outro */
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#intro-humitas {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+#tamanho-humitas{
+    padding: 30px;
+}
+}
+
+/**/
+
+@media (max-width: 800px) {
+#pisco-container {
+    display: flex;
+    flex-direction: column; /* Coloca os itens um embaixo do outro */
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#pisco-textos {
+    display: flex;
+    flex-direction: column; /* Coloca os itens um embaixo do outro */
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#intro-pisco {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+#tamanho-pisco{
+    padding: 30px;
+}
+}
+
+/**/
+
+@media (max-width: 800px) {
+#suspiro-container {
+    display: flex;
+    flex-direction: column; /* Coloca os itens um embaixo do outro */
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#suspiro-textos {
+    display: flex;
+    flex-direction: column; /* Coloca os itens um embaixo do outro */
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#intro-suspiro {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+#tamanho-suspiro{
+    padding: 30px;
+}
+}
+
+/* Estilo geral para a legenda */
+.carousel-caption {
+    color: #ffffff; /* Cor do texto */
+    font-family: Arial, sans-serif; /* Fonte personalizada */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estilizar o título */
+.carousel-caption h5 {
+    color: #ffffff;
+    font-size: 2rem; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra no texto */
+}
+
+/* Estilizar o parágrafo */
+.carousel-caption p {
+    color: #ffffff;
+    font-size: 1.2rem; /* Tamanho da fonte */
+    margin-top: 10px; /* Espaçamento superior */
+    line-height: 1.5; /* Espaçamento entre linhas */
+}
+
+
+
+
+
+
+
